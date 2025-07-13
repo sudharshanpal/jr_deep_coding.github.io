@@ -4,6 +4,8 @@ Welcome to **Jr. DEEP Coding**! 👩‍💻👨‍💻
 
 This page is your go-to reference for any **syntax**, **concepts**, or **examples** we use in our coding program. Whether you're working on a project, stuck on a line of code, or just want to review something we've learned — **this is the place to check**!
 
+🌐 Visit the site here: [https://sudharshanpal.github.io/jr_deep_coding.github.io/](https://sudharshanpal.github.io/jr_deep_coding.github.io/)
+
 ---
 
 ## 💡 What's Inside
