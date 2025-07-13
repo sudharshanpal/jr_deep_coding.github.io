@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jr. DEEP Coding – Day 1 Reference</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2a6cad;
+    }
+    .section {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    code {
+      background-color: #e0f7fa;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👩‍💻 Jr. DEEP Coding – Day 1 Reference Section 👨‍💻</h1>
+  <p>Welcome to your guide for everything we covered on <strong>Day 1</strong> of Jr. DEEP Coding! This page has all the code, definitions, and concepts we learned.</p>
+
+  <div class="section">
+    <h2>💡 What is Programming?</h2>
+    <p>Programming is giving instructions to a computer using a language it understands.</p>
+    <p>This week, we’re learning a language called <strong>Python</strong> — it’s beginner-friendly and fun!</p>
+  </div>
+
+  <div class="section">
+    <h2>🧠 IDE, Input, and Output</h2>
+    <ul>
+      <li><strong>IDE</strong>: Integrated Development Environment (where we write our code)</li>
+      <li><strong>Input</strong>: Getting information from the user</li>
+      <li><strong>Output</strong>: Showing results to the user</li>
+    </ul>
+    <p>Example:</p>
+    <code>name = input("What is your name?")</code><br/>
+    <code>print("Welcome, " + name)</code>
+  </div>
+
+  <div class="section">
+    <h2>🔢 Data Types</h2>
+    <ul>
+      <li><strong>String</strong>: Words/text (<code>"Hello"</code>)</li>
+      <li><strong>Integer</strong>: Whole numbers (<code>5</code>)</li>
+      <li><strong>Float</strong>: Decimal numbers (<code>3.14</code>)</li>
+      <li><strong>Boolean</strong>: True or False (<code>True</code>)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📦 Variables</h2>
+    <p>A variable stores information you want to use later!</p>
+    <code>x = "Hello"</code><br/>
+    <code>y = 5</code><br/>
+    <code>z = input("Enter something: ")</code>
+  </div>
+
+  <div class="section">
+    <h2>➕ Arithmetic in Python</h2>
+    <ul>
+      <li><code>+</code> Add</li>
+      <li><code>-</code> Subtract</li>
+      <li><code>*</code> Multiply</li>
+      <li><code>/</code> Divide</li>
+      <li><code>//</code> Floor divide</li>
+      <li><code>%</code> Modulo (remainder)</li>
+      <li><code>**</code> Exponents</li>
+    </ul>
+    <p>Example:</p>
+    <code>total = 5 + 3 * 2</code>
+  </div>
+
+  <div class="section">
+    <h2>🧩 Functions</h2>
+    <p>Functions perform specific tasks. You’ve already used functions like:</p>
+    <ul>
+      <li><code>print()</code> – shows something on screen</li>
+      <li><code>input()</code> – asks the user for input</li>
+      <li><code>type()</code> – tells you the data type</li>
+    </ul>
+    <p>You can even make your own function!</p>
+    <code>
+      def greet(name):<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print(f"Hello, {name}!")
+    </code><br/><br/>
+    <code>greet("Andrew")</code>
+    <p>This will print: <strong>Hello, Andrew!</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>📣 Strings and Concatenation</h2>
+    <p>To combine strings (words), you can use the <code>+</code> operator or f-strings.</p>
+    
+    <h3>Using <code>+</code> (Concatenation)</h3>
+    <code>name = "Alex"</code><br/>
+    <code>print("Hello " + name)</code> → <em>Not great if you want to add numbers!</em>
+
+    <h3>Using f-strings (Best way!)</h3>
+    <code>name = "Alex"</code><br/>
+    <code>print(f"Hello {name}")</code> → <strong>Much easier to read and write!</strong>
+    
+    <p>Use f-strings whenever possible. They're cleaner and safer!</p>
+  </div>
+
+  <div class="section">
+    <h2>🎉 MadLibs!</h2>
+    <p>MadLibs are fun stories with missing words. You choose random words (like nouns or verbs), and we insert them into a silly story!</p>
+    <p>Try it here: <a href="https://www.thewordfinder.com/wordlibs/" target="_blank">thewordfinder.com</a></p>
+  </div>
+
+  <div class="section">
+    <h2>🎲 Daily Challenges</h2>
+    <p>Each morning we play Wordle or do coding challenges to warm up our brains. Be ready to solve puzzles and share your answers!</p>
+  </div>
+
+  <hr style="margin: 50px 0; border: 2px dashed #ccc;">
+
+  <h1>👨‍🏫 Jr. DEEP Coding – Day 2 Reference Section</h1>
+  <p>Welcome back! On <strong>Day 2</strong>, we learned how to make decisions, use loops, generate random numbers, read and write files, and even start building quiz games!</p>
+
+  <div class="section">
+    <h2>🤔 Conditionals (If/Elif/Else)</h2>
+    <p>Conditionals help your program make decisions. They ask questions like “Is this true?” and do something based on the answer.</p>
+    <code>
+      if age > 10:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("You’re older than 10")<br/>
+      elif age == 10:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("You’re exactly 10!")<br/>
+      else:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("You’re younger than 10")
+    </code>
+    <h3>🧮 Comparison Symbols</h3>
+    <ul>
+      <li><code>==</code> equals</li>
+      <li><code>!=</code> not equal</li>
+      <li><code>&gt;</code> greater than</li>
+      <li><code>&lt;</code> less than</li>
+      <li><code>&gt;=</code> greater than or equal to</li>
+      <li><code>&lt;=</code> less than or equal to</li>
+    </ul>
+
+    <h3>🔗 Logical Operators</h3>
+    <ul>
+      <li><code>and</code> – both things must be true</li>
+      <li><code>or</code> – at least one must be true</li>
+      <li><code>not</code> – flips the condition</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔁 Loops (For & While)</h2>
+    <p>Loops let us repeat code without writing it over and over.</p>
+
+    <h3>🌀 For Loop</h3>
+    <code>
+      for i in range(0, 5):<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+    </code>
+    <p>This prints 0 to 4 (5 is not included)</p>
+
+    <h3>⏳ While Loop</h3>
+    <code>
+      i = 1<br/>
+      while i &lt;= 5:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;i += 1
+    </code>
+    <p>This runs until the condition becomes false.</p>
+  </div>
+
+  <div class="section">
+    <h2>🎲 Random Numbers</h2>
+    <p>Want the computer to surprise you? Use the <code>random</code> library!</p>
+    <code>
+      import random<br/>
+      number = random.randint(1, 10)<br/>
+      print(number)
+    </code>
+
+    <h3>🧠 Mini Game: Guess the Number!</h3>
+    <code>
+      import random<br/>
+      secret = random.randint(1, 10)<br/>
+      guess = int(input("Guess a number (1-10): "))<br/>
+      if guess == secret:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("Correct!")<br/>
+      else:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("Try again!")
+    </code>
+  </div>
+
+  <div class="section">
+    <h2>📂 Reading & Writing Files</h2>
+    <p>We can save and load information using files!</p>
+
+    <h3>📖 Reading</h3>
+    <code>
+      with open("myfile.txt", "r") as file:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;print(file.read())
+    </code>
+
+    <h3>✍️ Writing</h3>
+    <code>
+      with open("myfile.txt", "w") as file:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;file.write("Hello!\n")<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;file.write("Goodbye.\n")
+    </code>
+    <p><strong>\n</strong> adds a new line</p>
+  </div>
+  <hr style="margin: 50px 0; border: 2px dashed #ccc;">
+
+  <h1>👩‍💻 Jr. DEEP Coding – Day 3 Reference Section 👨‍💻</h1>
+  <p>Welcome! Today we’re learning the basics of <strong>Turtle Graphics</strong> in Python — a fun way to draw and move a turtle around the screen.</p>
+
+  <div class="section">
+    <h2>🐢 What is a Turtle?</h2>
+    <p>A turtle is a little cursor on the screen that you control by giving commands to move, turn, and draw.</p>
+    <p>The turtle moves around to draw pictures by putting its pen down or lifting it up.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔑 Main Turtle Functions</h2>
+    <ul>
+      <li><code>turtle.forward(distance)</code> – moves the turtle forward by the specified distance</li>
+      <li><code>turtle.backward(distance)</code> – moves the turtle backward</li>
+      <li><code>turtle.right(angle)</code> – turns the turtle clockwise by the given angle in degrees</li>
+      <li><code>turtle.left(angle)</code> – turns the turtle counterclockwise</li>
+      <li><code>turtle.penup()</code> – lifts the pen so the turtle moves without drawing</li>
+      <li><code>turtle.pendown()</code> – puts the pen down to draw while moving</li>
+      <li><code>turtle.goto(x, y)</code> – moves the turtle to the coordinate (x, y)</li>
+      <li><code>turtle.speed(speed)</code> – controls how fast the turtle moves (1 slow to 10 fast)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎮 Using Keyboard Controls with Turtle</h2>
+    <p>You can make the turtle respond to keys by using <code>onkeypress()</code> functions.</p>
+    <p>Example: Move the turtle up when the "Up" arrow key is pressed.</p>
+    <code>
+      import turtle<br/>
+      def move_up():<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;turtle.setheading(90)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;turtle.forward(20)<br/>
+      turtle.listen()<br/>
+      turtle.onkeypress(move_up, "Up")<br/>
+      turtle.mainloop()
+    </code>
+    <p>Here, <code>turtle.listen()</code> starts listening for key presses, and <code>turtle.mainloop()</code> keeps the window open.</p>
+  </div>
+
+   <hr style="margin: 40px 0; border: 2px dashed #ccc;">
+
+  <!-- Day 4 Section -->
+  <h1>🔐 Jr. DEEP Coding – Day 4 Reference Section: Cryptography Basics 🔐</h1>
+  <p>Today we explore <strong>Cryptography</strong>, the science of secret codes used to keep information safe.</p>
+
+  <div class="section">
+    <h2>🔍 What is Cryptography?</h2>
+    <p>Cryptography means writing or solving secret messages. We use ciphers to turn readable messages into scrambled ones (encryption), and then back again (decryption).</p>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Simple Cipher Example</h2>
+    <p>One simple cipher is the <strong>Caesar cipher</strong>, which shifts letters by a fixed number.</p>
+    <code>
+      # Example: shift letters by 3<br/>
+      def caesar_encrypt(text):<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;result = ""<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;for char in text:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if char.isalpha():<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shifted = chr((ord(char) - 65 + 3) % 26 + 65)  # uppercase example<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += shifted<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += char<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;return result
+    </code>
+  </div>
+
+  <div class="section">
+    <h2>🔐 Encryption vs. Decryption</h2>
+    <ul>
+      <li><strong>Encryption</strong>: Turning plain text into secret code</li>
+      <li><strong>Decryption</strong>: Turning secret code back into plain text</li>
+    </ul>
+    <p>Every cipher needs a key (like the number 3 in Caesar cipher) to encrypt and decrypt properly.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔣 Your Jr. DEEP Custom Cipher</h2>
+    <p>We’ll create our own secret code by replacing letters with symbols or emojis using a dictionary.</p>
+    <p>Example mapping:</p>
+    <code>
+      cipher = {<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;'a': '@',<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;'b': '&',<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;'c': '🌟',<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+      }
+    </code>
+    <p>This way, we turn each letter into a secret symbol to hide our message.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔄 Encrypt & Decrypt with Dictionaries</h2>
+    <p>Use two dictionaries:</p>
+    <ul>
+      <li><code>cipher</code> to turn letters into secret symbols (encryption)</li>
+      <li><code>decipher</code> to turn symbols back into letters (decryption)</li>
+    </ul>
+    <p>This helps us scramble and unscramble messages easily.</p>
+  </div>
+
+
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>© 2025 Jr. DEEP Coding Camp – Days 1 -> 5</p>
+  </footer>
+</body>
+</html>
+</body>
+</html>
