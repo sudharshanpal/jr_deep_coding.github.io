@@ -102,6 +102,10 @@
     </code><br/><br/>
     <code>greet("Andrew")</code>
     <p>This will print: <strong>Hello, Andrew!</strong></p>
+    <p>Functions require 2 things:</p>
+    <ul>
+      <li><strong>Input</strong> (Parameters): Information you give to the function (like a name)</li>
+      <li><strong>Output</strong> (Return Values): What the function gives back (like a greeting)</li>
   </div>
 
   <div class="section">
@@ -246,6 +250,10 @@
       <li><code>turtle.pendown()</code> – puts the pen down to draw while moving</li>
       <li><code>turtle.goto(x, y)</code> – moves the turtle to the coordinate (x, y)</li>
       <li><code>turtle.speed(speed)</code> – controls how fast the turtle moves (1 slow to 10 fast)</li>
+      <li><code>turtle.color(color)</code> – changes the turtle's pen color (e.g., "red", "blue", "#FF5733")</li>
+      <li><code>turtle.width(thickness)</code> – sets the thickness of the pen line</li>
+      <li><code>turtle.shape(shape)</code> – changes the turtle's appearance ("turtle", "arrow", "circle", "square")</li>
+      <li><code>turtle.setheading(angle)</code> – points the turtle in a specific direction (0° = right, 90° = up)</li>
     </ul>
   </div>
 
@@ -325,6 +333,36 @@
       <li><code>decipher</code> to turn symbols back into letters (decryption)</li>
     </ul>
     <p>This helps us scramble and unscramble messages easily.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔤 ASCII: The Secret Language of Computers</h2>
+    <p><strong>ASCII</strong> stands for <em>American Standard Code for Information Interchange</em>. It's a way computers store letters, numbers, and symbols as numbers.</p>
+    
+    <h3>📊 How ASCII Works</h3>
+    <p>Every character has a number:</p>
+    <ul>
+      <li>'A' = 65, 'B' = 66, 'C' = 67... 'Z' = 90</li>
+      <li>'a' = 97, 'b' = 98, 'c' = 99... 'z' = 122</li>
+      <li>'0' = 48, '1' = 49, '2' = 50... '9' = 57</li>
+      <li>' ' (space) = 32, '!' = 33, '?' = 63</li>
+    </ul>
+
+    <h3>🐍 Python ASCII Functions</h3>
+    <ul>
+      <li><code>ord(character)</code> – gets the ASCII number of a character</li>
+      <li><code>chr(number)</code> – gets the character from an ASCII number</li>
+    </ul>
+    
+    <h3>💡 Examples</h3>
+    <code>
+      print(ord('A'))  # Output: 65<br/>
+      print(chr(65))   # Output: A<br/>
+      print(ord('a'))  # Output: 97<br/>
+      print(chr(97))   # Output: a
+    </code>
+    
+    <p>This is how the Caesar cipher works - we shift ASCII numbers to create secret codes!</p>
   </div>
 
 
